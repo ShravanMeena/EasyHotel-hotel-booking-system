@@ -29,7 +29,6 @@ export default class Header extends Component {
         <div
           style={{
             position: "absolute",
-            right: 0,
             top: 20,
             right: 20,
           }}>

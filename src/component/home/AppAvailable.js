@@ -70,6 +70,7 @@ export default class AppAvailable extends Component {
           }}
           span={12}>
           <img
+            alt='okk'
             src='http://easybook.kwst.net/images/api.png'
             style={{ objectFit: "contain", height: 500 }}
           />
