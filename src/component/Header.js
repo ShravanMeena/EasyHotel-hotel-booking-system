@@ -9,6 +9,7 @@ import {
   DingdingOutlined,
   UserAddOutlined,
 } from "@ant-design/icons";
+import { Link } from "react-router-dom";
 
 const { SubMenu } = Menu;
 
@@ -33,11 +34,13 @@ export default class Header extends Component {
             right: 20,
           }}>
           <h1 style={{ fontWeight: "bold" }}>
-            <span style={{ color: "#18458b" }}>
-              <DingdingOutlined />
-              Easy
-            </span>
-            Book
+            <Link to='/'>
+              <span style={{ color: "#18458b" }}>
+                <DingdingOutlined />
+                Easy
+              </span>
+              Book
+            </Link>
           </h1>
         </div>
 
@@ -47,7 +50,7 @@ export default class Header extends Component {
           mode='horizontal'
           style={{ padding: 20 }}>
           <Menu.Item key='mail' icon={<HomeOutlined />}>
-            Home
+            <Link to='/'>Home</Link>
           </Menu.Item>
 
           <Menu.Item key='hotel' icon={<CreditCardOutlined />}>
@@ -55,11 +58,11 @@ export default class Header extends Component {
           </Menu.Item>
 
           <Menu.Item key='login' icon={<LoginOutlined />}>
-            Login
+            <Link to='/login'>Login</Link>
           </Menu.Item>
 
           <Menu.Item key='register' icon={<UserAddOutlined />}>
-            Register
+            <Link to='/register'>Register</Link>
           </Menu.Item>
 
           <SubMenu key='SubMenu' icon={<SettingOutlined />} title='My Account'>

@@ -29,7 +29,7 @@ export default class Banner extends Component {
     };
   }
 
-  onFinish = (values: any) => {
+  onFinish = (values) => {
     console.log("Finish:", values);
   };
 
